@@ -42,45 +42,43 @@ test_time2 = 30
 '''aluminium'''
 
 file_path_Al_blank_v1 = 'aluminium_blank'
-_, alpha_Al_blank_v1, epsilon_Al_blank_v1, Temp_end_Al_blank_v1 = find_alpha_and_epsilon(file_path_Al_blank_v1, 22.1,
+_, alpha_Al_blank_v1, epsilon_Al_blank_v1, Temp_max_Al_blank_v1 = find_alpha_and_epsilon(file_path_Al_blank_v1, 22.1,
                                                                                          C_Al_blank, A_Al_blank,
                                                                                          test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Al_blank_v1, 22.1, C_Al_blank, A_Al_blank, test_time1)
 
 file_path_Al_blank_v2 = 'aluminium_blank_v2'
-# högt epsilon, 0.16284837623167084 vs 0.08682746802153363
-_, alpha_Al_blank_v2, epsilon_Al_blank_v2, Temp_end_Al_blank_v2 = find_alpha_and_epsilon(file_path_Al_blank_v2, 22.4,
+# högt epsilon jämfört med v1 och andra aluminium
+_, alpha_Al_blank_v2, epsilon_Al_blank_v2, Temp_max_Al_blank_v2 = find_alpha_and_epsilon(file_path_Al_blank_v2, 22.4,
                                                                                          C_Al_blank, A_Al_blank,
                                                                                          test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Al_blank_v2, 22.4, C_Al_blank, A_Al_blank, test_time1)
 
 file_path_Al_bucklig_v1 = 'aluminium_bucklig_2'
-# aningen lågt epsilon, 0.028507268548410916 vs 0.045490257574460624
-_, alpha_Al_bucklig_v1, epsilon_Al_bucklig_v1, Temp_end_Al_bucklig_v1 = find_alpha_and_epsilon(file_path_Al_bucklig_v1,
+_, alpha_Al_bucklig_v1, epsilon_Al_bucklig_v1, Temp_max_Al_bucklig_v1 = find_alpha_and_epsilon(file_path_Al_bucklig_v1,
                                                                                                22.2, C_Al_bucklig,
                                                                                                A_Al_bucklig, test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Al_bucklig_v1, 22.2, C_Al_bucklig, A_Al_bucklig, test_time1)
 
 file_path_Al_bucklig_v2 = 'aluminium_bucklig_v2'
-_, alpha_Al_bucklig_v2, epsilon_Al_bucklig_v2, Temp_end_Al_bucklig_v2 = find_alpha_and_epsilon(file_path_Al_bucklig_v2,
+_, alpha_Al_bucklig_v2, epsilon_Al_bucklig_v2, Temp_max_Al_bucklig_v2 = find_alpha_and_epsilon(file_path_Al_bucklig_v2,
                                                                                                22.3, C_Al_bucklig,
                                                                                                A_Al_bucklig, test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Al_bucklig_v2, 22.3, C_Al_bucklig, A_Al_bucklig, test_time1)
 
 file_path_Al_repad_v1 = 'aluminium_repad'
-# ganska lågt epsilon jämfört med v2
-_, alpha_Al_repad_v1, epsilon_Al_repad_v1, Temp_end_Al_repad_v1 = find_alpha_and_epsilon(file_path_Al_repad_v1, 21.9,
+_, alpha_Al_repad_v1, epsilon_Al_repad_v1, Temp_max_Al_repad_v1 = find_alpha_and_epsilon(file_path_Al_repad_v1, 21.9,
                                                                                          C_Al_repad, A_Al_repad,
                                                                                          test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Al_repad_v1, 21.9, C_Al_repad, A_Al_repad, test_time1)
 
 file_path_Al_repad_v2 = 'aluminium_repad_v2'
-_, alpha_Al_repad_v2, epsilon_Al_repad_v2, Temp_end_Al_repad_v2 = find_alpha_and_epsilon(file_path_Al_repad_v2, 22.3,
+_, alpha_Al_repad_v2, epsilon_Al_repad_v2, Temp_max_Al_repad_v2 = find_alpha_and_epsilon(file_path_Al_repad_v2, 22.3,
                                                                                          C_Al_repad, A_Al_repad,
                                                                                          test_time1)
 print(_)
@@ -90,42 +88,45 @@ plot_find_alpha_and_epsilon(file_path_Al_repad_v2, 22.3, C_Al_repad, A_Al_repad,
 
 file_path_Cu_blank_v1 = 'koppar_blank'
 # väldigt lågt epsilon jämfört med v2
-_, alpha_Cu_blank_v1, epsilon_Cu_blank_v1, Temp_end_Cu_blank_v1 = find_alpha_and_epsilon(file_path_Cu_blank_v1, 21.8,
+_, alpha_Cu_blank_v1, epsilon_Cu_blank_v1, Temp_max_Cu_blank_v1 = find_alpha_and_epsilon(file_path_Cu_blank_v1, 21.8,
                                                                                          C_Cu_blank, A_Cu_blank,
                                                                                          test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Cu_blank_v1, 21.8, C_Cu_blank, A_Cu_blank, test_time1)
 
 file_path_Cu_blank_v2 = 'koppar_blank_v2'
-_, alpha_Cu_blank_v2, epsilon_Cu_blank_v2, Temp_end_Cu_blank_v2 = find_alpha_and_epsilon(file_path_Cu_blank_v2, 22.0,
+_, alpha_Cu_blank_v2, epsilon_Cu_blank_v2, Temp_max_Cu_blank_v2 = find_alpha_and_epsilon(file_path_Cu_blank_v2, 22.0,
                                                                                          C_Cu_blank, A_Cu_blank,
                                                                                          test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Cu_blank_v2, 22.0, C_Cu_blank, A_Cu_blank, test_time1)
 
 file_path_Cu_bucklig_v1 = 'koppar_bucklig'
-_, alpha_Cu_bucklig_v1, epsilon_Cu_bucklig_v1, Temp_end_Cu_bucklig_v1 = find_alpha_and_epsilon(file_path_Cu_bucklig_v1,
+_, alpha_Cu_bucklig_v1, epsilon_Cu_bucklig_v1, Temp_max_Cu_bucklig_v1 = find_alpha_and_epsilon(file_path_Cu_bucklig_v1,
                                                                                                21.8, C_Cu_bucklig,
                                                                                                A_Cu_bucklig, test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Cu_bucklig_v1, 21.8, C_Cu_bucklig, A_Cu_bucklig, test_time1)
 
 file_path_Cu_bucklig_v2 = 'koppar_bucklig_v2'
-_, alpha_Cu_bucklig_v2, epsilon_Cu_bucklig_v2, Temp_end_Cu_bucklig_v2 = find_alpha_and_epsilon(file_path_Cu_bucklig_v2,
+# ganska lågt epsilon jämfört med v1
+_, alpha_Cu_bucklig_v2, epsilon_Cu_bucklig_v2, Temp_max_Cu_bucklig_v2 = find_alpha_and_epsilon(file_path_Cu_bucklig_v2,
                                                                                                22.2, C_Cu_bucklig,
                                                                                                A_Cu_bucklig, test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Cu_bucklig_v2, 22.2, C_Cu_bucklig, A_Cu_bucklig, test_time1)
 
 file_path_Cu_repad_v1 = 'koppar_repad_misstänkt_2'
-_, alpha_Cu_repad_v1, epsilon_Cu_repad_v1, Temp_end_Cu_repad_v1 = find_alpha_and_epsilon(file_path_Cu_repad_v1, 22.2,
+# helt klart dålig platta
+_, alpha_Cu_repad_v1, epsilon_Cu_repad_v1, Temp_max_Cu_repad_v1 = find_alpha_and_epsilon(file_path_Cu_repad_v1, 22.2,
                                                                                          C_Cu_repad, A_Cu_repad,
                                                                                          test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Cu_repad_v1, 22.2, C_Cu_repad, A_Cu_repad, test_time1)
 
 file_path_Cu_repad_v2 = 'koppar_repad_misstänkt_v2'
-_, alpha_Cu_repad_v2, epsilon_Cu_repad_v2, Temp_end_Cu_repad_v2 = find_alpha_and_epsilon(file_path_Cu_repad_v2, 21.9,
+# helt klart dålig platta
+_, alpha_Cu_repad_v2, epsilon_Cu_repad_v2, Temp_max_Cu_repad_v2 = find_alpha_and_epsilon(file_path_Cu_repad_v2, 21.9,
                                                                                          C_Cu_repad, A_Cu_repad,
                                                                                          test_time1)
 print(_)
@@ -134,27 +135,27 @@ plot_find_alpha_and_epsilon(file_path_Cu_repad_v2, 21.9, C_Cu_repad, A_Cu_repad,
 '''grundupg'''
 
 file_path_Cu_svart_v1 = 'koppar_svart'
-_, alpha_Cu_svart_v1, epsilon_Cu_svart_v1, Temp_end_Cu_svart_v1 = find_alpha_and_epsilon(file_path_Cu_svart_v1, 22,
+_, alpha_Cu_svart_v1, epsilon_Cu_svart_v1, Temp_max_Cu_svart_v1 = find_alpha_and_epsilon(file_path_Cu_svart_v1, 22,
                                                                                          C_Cu_svart, A_Cu_svart,
                                                                                          test_time2)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Cu_svart_v1, 22, C_Cu_svart, A_Cu_svart, test_time2)
 
 file_path_Cu_svart_v2 = 'koppar_svart_v2'
-_, alpha_Cu_svart_v2, epsilon_Cu_svart_v2, Temp_end_Cu_svart_v2 = find_alpha_and_epsilon(file_path_Cu_svart_v2, 22.0,
+_, alpha_Cu_svart_v2, epsilon_Cu_svart_v2, Temp_max_Cu_svart_v2 = find_alpha_and_epsilon(file_path_Cu_svart_v2, 22.0,
                                                                                          C_Cu_svart, A_Cu_svart,
                                                                                          test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Cu_svart_v2, 22.0, C_Cu_svart, A_Cu_svart, test_time1)
 
 file_path_Cu_vit_v1 = 'koppar_vit'
-_, alpha_Cu_vit_v1, epsilon_Cu_vit_v1, Temp_end_Cu_vit_v1 = find_alpha_and_epsilon(file_path_Cu_vit_v1, 21.9, C_Cu_vit,
+_, alpha_Cu_vit_v1, epsilon_Cu_vit_v1, Temp_max_Cu_vit_v1 = find_alpha_and_epsilon(file_path_Cu_vit_v1, 21.9, C_Cu_vit,
                                                                                    A_Cu_vit, test_time1)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Cu_vit_v1, 21.9, C_Cu_vit, A_Cu_vit, test_time1)
 
 file_path_Cu_vit_v2 = 'koppar_vit_v2'
-_, alpha_Cu_vit_v2, epsilon_Cu_vit_v2, Temp_end_Cu_vit_v2 = find_alpha_and_epsilon(file_path_Cu_vit_v2, 22.2, C_Cu_vit,
+_, alpha_Cu_vit_v2, epsilon_Cu_vit_v2, Temp_max_Cu_vit_v2 = find_alpha_and_epsilon(file_path_Cu_vit_v2, 22.2, C_Cu_vit,
                                                                                    A_Cu_vit, test_time2)
 print(_)
 plot_find_alpha_and_epsilon(file_path_Cu_vit_v2, 22.2, C_Cu_vit, A_Cu_vit, test_time2)
