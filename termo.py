@@ -25,7 +25,8 @@ def volt2temp(V, T_o):
     V_mV = V_MEAS_mV + V_o
     t_90 = d_0 + d_1 * V_mV + d_2 * V_mV ** 2 + d_3 * V_mV ** 3 + d_4 * V_mV ** 4 + d_5 * V_mV ** 5 + d_6 * V_mV ** 6
     T_o_K = Kelvin(T_o)
-    return t_90 + T_o_K
+    return Kelvin(t_90)
+    # return t_90 + T_o_K
 
 
 def timedata2time(timestamp, Time_data):
@@ -206,4 +207,4 @@ def find_alpha_and_epsilon(file_path, T_o, C, A, start_index_heat):
                 (2 * A * sigma * (Time[timestamp_cool] ** 4 - Kelvin(T_o) ** 4))) -
                delta_e - P_c / (2 * A * sigma * (Time[timestamp_cool] ** 4 - Kelvin(T_o) ** 4)))
 
-    return f'\n*********\n{str(file_path)}\n*********\nsluttemp: {Temp[-1]}\n\nalpha: {alpha}\nderivata heat: {derivative_poly_heat}\n\nepsilon: {epsilon}\nderivata cool: {derivative_poly_cool}', alpha, epsilon, Temp[-1]
+    return f'\n*********\n{str(file_path)}\n*********\nmaxtemp: {Temp[peak_index]}\n\nalpha: {alpha}\nderivata heat: {derivative_poly_heat}\n\nepsilon: {epsilon}\nderivata cool: {derivative_poly_cool}', alpha, epsilon, Temp[peak_index]
