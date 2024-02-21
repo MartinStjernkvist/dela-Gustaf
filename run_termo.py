@@ -163,7 +163,6 @@ Cu_repad_v2 = termo(file_path_Cu_repad_v2, 22.2,
 _, alpha_Cu_repad_v2, epsilon_Cu_repad_v2, Temp_max_Cu_repad_v2 = Cu_repad_v2.find()
 print(_)
 
-
 """
 Cu_svart_v1.plot()
 Cu_svart_v2.plot()
@@ -183,7 +182,6 @@ Cu_bucklig_v2.plot()
 Cu_repad_v1.plot()
 Cu_repad_v2.plot()
 """
-
 
 alpha_Al_blank = 0.5 * (alpha_Al_blank_v1 + alpha_Al_blank_v2)
 alpha_Al_repad = 0.5 * (alpha_Al_repad_v1 + alpha_Al_repad_v2)
@@ -244,7 +242,9 @@ alpha_dict = {
     'alpha_Al_bucklig': alpha_Al_bucklig,
     'alpha_Cu_blank': alpha_Cu_blank,
     'alpha_Cu_repad': alpha_Cu_repad,
-    'alpha_CU_bucklig': alpha_CU_bucklig
+    'alpha_CU_bucklig': alpha_CU_bucklig,
+    'alpha_Cu_svart': alpha_Cu_svart,
+    'alpha_Cu_vit': alpha_Cu_vit
 }
 for key, value in alpha_dict.items():
     print(f"{key}: {value}")
@@ -263,9 +263,10 @@ epsilon_dict = {
     'epsilon_Al_bucklig': epsilon_Al_bucklig,
     'epsilon_Cu_blank': epsilon_Cu_blank,
     'epsilon_Cu_repad': epsilon_Cu_repad,
-    'epsilon_CU_bucklig': epsilon_CU_bucklig
+    'epsilon_CU_bucklig': epsilon_CU_bucklig,
+    'epsilon_Cu_svart': epsilon_Cu_svart,
+    'epsilon_Cu_vit': epsilon_Cu_vit
 }
 
 for key, value in epsilon_dict.items():
     print(f"{key}: {value}")
-
