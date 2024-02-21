@@ -163,7 +163,6 @@ Cu_repad_v2 = termo(file_path_Cu_repad_v2, 22.2,
 _, alpha_Cu_repad_v2, epsilon_Cu_repad_v2, Temp_max_Cu_repad_v2 = Cu_repad_v2.find()
 print(_)
 
-"""
 Cu_svart_v1.plot()
 Cu_svart_v2.plot()
 Cu_vit_v1.plot()
@@ -181,7 +180,6 @@ Cu_bucklig_v1.plot()
 Cu_bucklig_v2.plot()
 Cu_repad_v1.plot()
 Cu_repad_v2.plot()
-"""
 
 alpha_Al_blank = 0.5 * (alpha_Al_blank_v1 + alpha_Al_blank_v2)
 alpha_Al_repad = 0.5 * (alpha_Al_repad_v1 + alpha_Al_repad_v2)
